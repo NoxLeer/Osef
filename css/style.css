@@ -1,3 +1,7 @@
+.application-totale{
+    background: "fond.jpg";
+}
+
 .titre{
     text-align: center;
 }
@@ -10,17 +14,30 @@
     padding: 0%;
 }
 
-.resultat{
-    text-align: center;
+.questionnaire{
+margin-left: 15%;
+border: solid 2px rgb(0, 0, 0);
 }
-
+.question{
+    text-align: center;
+    
+}
 #map {
-    margin-left: 15%;
     height: 80vh;
     width: 100vh;
+    
 
 }
 .application{
     display: flex;
     flex-wrap: nowrap;
+}
+.resultat{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.submit{
+    margin-left: 35%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
