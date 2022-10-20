@@ -6,28 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-    crossorigin=""/>
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-     crossorigin=""></script>
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
     <link href="css/style.css" rel="stylesheet">
     <title>Quizz</title>
 </head>
 
 <body>
+
     <div class="titre">
         <h1>Quizz Tech</h1>
     </div>
+
     <div class="application">
+
         <div class="tableau-de-score">
-            <p>Tableau de score : </p>
+            <p>Tableau de score :</p>
         </div>
-        <section id="map"/>
+        <div class="questionnaire">
+            <div class="question">
+                <h2>Question 1: Ou se trouve la France ?</h2>
+            </div>
+            <div class="map">
+                <section id="map"/>
+            </div>
+        <div class="resultat">
+            <h3>Score : 15</h3>
+            <input type="submit" class="submit" value="Valider">
+        </div>
     </div>
-    <div class="resultat">
-        <span>Score : 15</span>
-    </div>
-    <script defer src="js/meteo.js"></script>
+        <script defer src="js/meteo.js"></script>
 </body>
+
 </html>
