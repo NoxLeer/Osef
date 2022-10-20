@@ -14,25 +14,30 @@
 </head>
 
 <body>
+
     <div class="titre">
         <h1>Quizz Tech</h1>
         <p class="country-to-find"></p>
     </div>
+
     <div class="application">
+
         <div class="tableau-de-score">
-            <p>Tableau de score : </p>
+            <p>Tableau de score :</p>
         </div>
-        <section id="map"></section>
-    </div>
-    <div class="resultat">
-        <span>Score : </span>
-    </div>
-    <div>
-        <input type="submit" class="submit" value="Valider">
-    </div>
-    <script defer src="js/leafjetconfig.js"></script>
-    <script defer src="js/meteo.js"></script>
-    <script defer src="js/index.js"></script>
+        <div class="questionnaire">
+            <div class="question">
+                <h2>Question 1: Ou se trouve la France ?</h2>
+            </div>
+            <div class="map">
+                <section id="map" />
+            </div>
+            <div class="resultat">
+                <h3>Score : 15</h3>
+                <input type="submit" class="submit" value="Valider">
+            </div>
+        </div>
+        <script defer src="js/meteo.js"></script>
 </body>
 
 </html>
