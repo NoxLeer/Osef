@@ -1,0 +1,12 @@
+.titre{
+    text-align: center;
+}
+.tableau-de-score{
+    display: inline-block;
+    float: center;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.resultat{
+    text-align: center;
+}
