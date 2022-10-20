@@ -2,11 +2,13 @@
     text-align: center;
 }
 .tableau-de-score{
-    display: inline-block;
-    float: center;
-    margin-top: 5%;
-    margin-left: 5%;
+    width: 389px;
+    height: 91px;
+    text-align:center;
+    border: solid 2px rgb(0, 0, 0);
+    padding: 0%;
 }
+
 .resultat{
     text-align: center;
 }
