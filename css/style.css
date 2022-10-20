@@ -2,16 +2,25 @@
     text-align: center;
 }
 .tableau-de-score{
-    display: inline-block;
-    float: center;
-    margin-top: 5%;
     margin-left: 5%;
+    width: 389px;
+    min-height: 91px;
+    text-align:center;
+    border: solid 2px rgb(0, 0, 0);
+    padding: 0%;
 }
+
 .resultat{
     text-align: center;
 }
 
 #map {
+    margin-left: 15%;
     height: 80vh;
     width: 100vh;
+
+}
+.application{
+    display: flex;
+    flex-wrap: nowrap;
 }
