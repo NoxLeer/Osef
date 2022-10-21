@@ -14,29 +14,57 @@
 </head>
 
 <body>
-<div class=".application-totale">
+    <div class="application-totale"></div>
     <div class="titre">
         <h1>Quizz Tech</h1>
     </div>
 
     <div class="application">
 
-    <div class="tableau-de-score">
-        <p>Tableau de score :</p>
-    </div>
-    <div class="questionnaire">
-         <div class="question">
-            <h2>Question 1: Ou se trouve la France ?</h2>
+        <div class="tableau-de-score">
+            <p>Tableau de score :</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pseudo</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Paul</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>George</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>Ringo</td>
+                        <td>40</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="map">
-            <section id="map"/>
+        <div class="questionnaire">
+            <div class="question">
+                <h2>Question 1: Où se trouve <span class="country-to-find"></span> ?</h2>
+            </div>
+            <div class="map">
+                <section id="map" />
+            </div>
+            <div class="resultat">
+                <h3>Score : <span class="score">0</span></h3>
+                <input type="submit" class="submit" value="Valider">
+            </div>
         </div>
-    <div class="resultat">
-        <h3>Score : 15</h3>
-        <input type="submit" class="submit" value="Valider">
-    </div>
-</div>
-    <script defer src="js/map.js"></script>
+        <script defer src="js/leafjetconfig.js"></script>
+        <script defer src="js/meteo.js"></script>
+        <script defer src="js/index.js"></script>
 </body>
 
 </html>

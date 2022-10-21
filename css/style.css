@@ -1,43 +1,64 @@
-.application-totale{
-    background-image: url("css/fond.jpg");
+body {
+    background-image: url("fond.jpg");
+    color: white;
+    overflow: hidden;
 }
 
-.titre{
+.titre {
     text-align: center;
 }
-.tableau-de-score{
+
+.tableau-de-score {
     margin-left: 5%;
     width: 389px;
     min-height: 91px;
-    text-align:center;
+    text-align: center;
     border: solid 2px rgb(0, 0, 0);
     padding: 0%;
 }
 
-.questionnaire{
-margin-left: 15%;
-border: solid 2px rgb(0, 0, 0);
+.tableau-de-score table {
+    width: 100%;
+    font-size: 1.2em;
 }
-.question{
-    text-align: center;
-    
-}
-#map {
-    height: 80vh;
-    width: 100vh;
-    
 
+.questionnaire {
+    margin-left: 15%;
+    border: solid 2px rgb(0, 0, 0);
 }
-.application{
+
+.question {
+    text-align: center;
+}
+
+#map {
+    height: 70vh;
+    width: 1000px;
+}
+
+.application {
     display: flex;
     flex-wrap: nowrap;
 }
-.resultat{
+
+.resultat {
     display: flex;
     flex-wrap: nowrap;
 }
-.submit{
+
+.submit {
     margin-left: 35%;
     margin-top: 2%;
     margin-bottom: 2%;
+    padding: 1em;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.submit[disabled] {
+    background-color: #ccc;
 }
