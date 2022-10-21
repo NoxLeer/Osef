@@ -10,6 +10,7 @@ const initializeGame = async () => {
     const validerButton = document.querySelector('.submit');
     const countryToFindElt = document.querySelector('.country-to-find');
 
+    //#region game methods
     const loadCountries = async () => {
         countries = await fetch('https://restcountries.com/v3.1/all?fields=name,latlng')
             .then(response => response.json());
@@ -72,6 +73,7 @@ const initializeGame = async () => {
         validerButton.disabled = true;
         validerButton.onclick = validerButtonEvent;
     };
+    //#endregion
 
     await loadCountries();
     initializeMapBehaviour();
