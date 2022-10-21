@@ -17,6 +17,11 @@ body {
     padding: 0%;
 }
 
+.tableau-de-score table {
+    width: 100%;
+    font-size: 1.2em;
+}
+
 .questionnaire {
     margin-left: 15%;
     border: solid 2px rgb(0, 0, 0);
