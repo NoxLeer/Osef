@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
         integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
         integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
-    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
     <title>Quizz</title>
 </head>
 
@@ -20,42 +24,39 @@
     </div>
 
     <div class="application">
-
         <div class="tableau-de-score">
-            <p>Tableau de score :</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Pseudo</th>
-                        <th>Score</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Paul</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>George</td>
-                        <td>60</td>
-                    </tr>
-                    <tr>
-                        <td>Ringo</td>
-                        <td>40</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-container">
+                <p>Tableau de score :</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pseudo</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="connected-container" hidden>
+                <p>Bonjour <span class="user-pseudo">personne</span></p>
+                <button class="disconnect-btn">Déconnexion</button>
+            </div>
+            <form class="pseudo-container">
+                <label for="pseudo">
+                    Ta team :
+                    <input type="text" id="pseudo" name="pseudo">
+                </label>
+                <button type="submit">Connexion</button>
+            </form>
         </div>
         <div class="questionnaire">
             <div class="question">
                 <h2>Question 1: Où se trouve <span class="country-to-find"></span> ?</h2>
             </div>
             <div class="map">
-                <section id="map" />
+                <section id="map"></section>
             </div>
             <div class="resultat">
                 <h3>Score : <span class="score">0</span></h3>
@@ -63,7 +64,7 @@
             </div>
         </div>
         <script defer src="js/leafjetconfig.js"></script>
-        <script defer src="js/meteo.js"></script>
+        <script defer src="js/map.js"></script>
         <script defer src="js/index.js"></script>
 </body>
 

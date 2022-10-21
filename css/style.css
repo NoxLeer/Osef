@@ -8,6 +8,10 @@ body {
     text-align: center;
 }
 
+.table-container {
+    margin-bottom: 2em;
+}
+
 .tableau-de-score {
     margin-left: 5%;
     width: 389px;
@@ -20,6 +24,7 @@ body {
 .tableau-de-score table {
     width: 100%;
     font-size: 1.2em;
+    overflow-y: scroll;
 }
 
 .questionnaire {
