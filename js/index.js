@@ -62,16 +62,14 @@ const initializeGame = async () => {
         nextCountry();
 
         validerButton.onclick = validerButtonEvent;
-
         validerButton.value = "Valider";
+        validerButton.disabled = true;
 
         initializeMapBehaviour();
     };
 
     const initializeValiderButton = () => {
         validerButton.disabled = true;
-        validerButton.classList.add('disabled');
-
         validerButton.onclick = validerButtonEvent;
     };
 
